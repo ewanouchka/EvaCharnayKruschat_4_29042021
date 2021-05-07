@@ -560,6 +560,7 @@ blockquote {
   margin: 0 0 1rem;
   font-size: 2rem;
   font-style: italic;
+  color: initial;
   text-align: left;
   border-left: 5px solid var(--color-primary);
   position: relative;

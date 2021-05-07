@@ -437,6 +437,8 @@ p {
 .social {
   max-width: 400px;
   margin: auto auto auto auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 h2 {
@@ -476,6 +478,7 @@ h4 {
 
 .portfolio-thumb {
   margin-bottom: 24px;
+  object-fit: cover;
 }
 
 .portfolio-row {
@@ -546,8 +549,14 @@ h4 {
   font-weight: bold;
 }
 
+.col-md-8 {
+  width: 66.66666667%;
+  float: left;
+  margin-left: 16.666666667%;
+}
+
 blockquote {
-  padding: 0 10px;
+  padding: 0 2rem 0 1rem;
   margin: 0 0 1rem;
   font-size: 2rem;
   font-style: italic;
@@ -781,17 +790,19 @@ blockquote::after {
     width: 180px;
     height: 320px;
   }
+  .bloc-mob-center-text {
+    text-align: center;
+  }
+
+  .portfolio-thumb {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 @media (max-width: 400px) {
   .bloc {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .bloc-mob-center-text {
-    text-align: center;
   }
 }

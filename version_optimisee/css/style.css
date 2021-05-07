@@ -602,6 +602,14 @@ blockquote::after {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .bg-banniere {
+    background-image: url("../assets/images/banniere_1sm.jpg");
+  }
+
+  .bg-presentation {
+    background-image: url("../assets/images/banniere_2sm.jpg");
+  }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -801,9 +809,17 @@ blockquote::after {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .bloc {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .bg-banniere {
+    background-image: url("../assets/images/banniere_1xs.jpg");
+  }
+
+  .bg-presentation {
+    background-image: url("../assets/images/banniere_2xs.jpg");
   }
 }

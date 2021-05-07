@@ -1,0 +1,61 @@
+:root {
+  --color-primary: #f3976c;
+  --color-primary-dark: #c27956;
+  --color-secondary: #364577;
+  --color-base: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow-x: hidden;
+  font-family: "helvetica";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-base);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-primary-dark);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+header {
+  text-align: center;
+  background: var(--color-primary);
+  padding: 2rem 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1440px;
+  text-align: justify;
+  margin: auto;
+}
+
+.top-links {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  display: inline;
+  width: 100%;
+}
+
+.index,
+.contact {
+  width: 50%;
+}
+
+.index img,
+.contact img {
+  max-width: 20rem;
+}

@@ -15,40 +15,165 @@
   </header>
   <main>
     <div class="top-links">
-      <a href="version_actuelle/">Version actuelle</a> - <a href="version_optimisee/">Version optimisée</a>
+      <a href="version_actuelle/">Version actuelle</a> <a href="version_optimisee/">Version optimisée</a>
     </div>
-    <section class="index">
-      <h2>Page d'accueil</h2>
-      <h3>Etat des lieux</h3>
-      <h4>Bilan lighthouse</h4>
-      <img src="lh_index_desk_base.jpg" />
-      <img src="lh_index_mob_base.jpg" />
-      <h4>Compte-rendu wave</h4>
-      <img src="wave_index_base.jpg" />
+    <section class="inventory">
+      <h2>Etat des lieux</h2>
+      <section class="inventory__wave">
+        <h3>Compte-rendu wave</h3>
+        <section class="inventory__wave__figures">
+          <figure>
+            <img src="assets/wave_index_base.jpg" alt="Etat d'accessibilité de l'index" />
+            <figcaption>Etat d'accessibilité de l'index</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/wave_contact_base.jpg" alt="Etat d'accessibilité de la page de contact" />
+            <figcaption>Etat d'accessibilité de la page de contact</figcaption>
+          </figure>
+        </section>
+        <p>Parmi les points positifs de la page actuelle, nous pouvons noter :</p>
+        <ul>
+          <li>un effort sur la structure de la page avec des balises sémantiques h1, h2 et h3,</li>
+          <li>la présence d'une barre de navigation et sa liste de liens,</li>
+          <li>des efforts sur les textes alternatifs présents sur certains liens et images.</li>
+        </ul>
+        <p>Cependant, de nombreuses erreurs restent à corriger.</p>
+        <div class="inventory__wave__errors">
+          <div class="inventory__wave__errors__index">
+            <img src="assets/wave_errors_index.jpg" alt="" />
+            <p>
+              Wave relève 34 erreurs dont 29 en relation avec les contrastes de la page sur lequel un gros effort doit
+              être apporté en terme d'accessibilité. Des liens restent vides (correspondant aux réseaux sociaux), et la
+              balise "lang" n'est pas correctement renseignée.
+            </p>
+            <p>Nous constatons également 12 alertes à corriger, telles que :</p>
+            <ul>
+              <li>
+                des liens redondants (la page de contact est appelée 4 fois, des liens pointant vers l'index sont à
+                revoir),
+              </li>
+              <li>le libellé de certains textes alternatifs répété,</li>
+              <li>du texte caché (en police 1px blanc sur blanc),</li>
+              <li>
+                et une erreur au niveau de l'ordre des balises h2 et h3 ne permettant pas une bonne compréhension de la
+                structure de la page.
+              </li>
+            </ul>
+          </div>
+          <div class="inventory__wave__errors__contact">
+            <img src="assets/wave_errors_contact.jpg" alt="" />
+            <p>
+              Wave relève 13 erreurs dont 4 en relation avec les contrastes de la page et 4 alertes à corriger, telles
+              que :
+            </p>
+            <ul>
+              <li>
+                l'absence de label pour les champs de formulaire (après inspection du code, il ne sont pas correctement
+                spécifiés),
+              </li>
+              <li>la balise "lang" renseignée de façon incorrecte,</li>
+              <li>
+                des liens vides correspondant aux réseaux sociaux, qui ne s'affichent par ailleurs pas sur la page.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <h3>Optimisation</h3>
-      <h4>Bilan lighthouse</h4>
-      <img src="lh_index_desk_opti.jpg" />
-      <img src="lh_index_mob_opti.jpg" />
-      <h4>Compte-rendu wave</h4>
-      <img src="wave_index_opti.jpg" />
+      <section class="inventory__light">
+        <h3>Bilan lighthouse</h3>
+        <div class="score score--orange">79</div>
+        <div class="score score--green">90</div>
+        <div class="score score--orange">80</div>
+        <div class="score score--orange">80</div>
+        <section class="inventory__light__figures">
+          <figure>
+            <img src="assets/lh_index_desk_base.jpg" />
+            <figcaption>Performances de l'index en vue desktop</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/lh_index_mob_base.jpg" />
+            <figcaption>Performances de l'index en vue mobile</figcaption>
+          </figure>
+        </section>
+
+        <section class="inventory__light__figures">
+          <figure>
+            <img src="assets/lh_contact_desk_base.jpg" />
+            <figcaption>Performances de la page de contact en vue desktop</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/lh_contact_mob_base.jpg" />
+            <figcaption>Performances de la page de contact en vue mobile</figcaption>
+          </figure>
+        </section>
+      </section>
     </section>
 
-    <section class="contact">
-      <h2>Page de contact</h2>
-      <h3>Etat des lieux</h3>
-      <h4>Bilan lighthouse</h4>
-      <img src="lh_contact_desk_base.jpg" />
-      <img src="lh_contact_mob_base.jpg" />
-      <h4>Compte-rendu wave</h4>
-      <img src="wave_contact_base.jpg" />
+    <section class="proposition">
+      <h2>Améliorations proposées</h2>
+      <section class="proposition__wave">
+        <h3>Compte-rendu wave</h3>
+        <section class="proposition__wave__figures">
+          <figure>
+            <img src="assets/wave_index_opti.jpg" />
+            <figcaption>Etat d'accessibilité de l'index</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/wave_contact_opti.jpg" />
+            <figcaption>Etat d'accessibilité de la page de contact</figcaption>
+          </figure>
+        </section>
+        <p>Correction des défauts de contrastes et des erreurs soulevés :</p>
+        <ul>
+          <li>
+            ajustement des textes alternatifs afin qu'ils soient descriptifs de l'image ou du lien auquel ils sont
+            associés, et uniques,
+          </li>
+          <li>suppression du texte caché,</li>
+          <li>rectification de l'ordre des balises h2 et h3,</li>
+          <li>rectification des label des champs de formulaire,</li>
+          <li>correction de la balise lang="fr".</li>
+        </ul>
+        <p>
+          Il restera à s'assurer de la nécessité des multiples liens vers la page de contact sur l'index, et à
+          implémenter les liens vers les réseaux sociaux qui font encore défaut.
+        </p>
+        <p>
+          Nous avons par ailleurs ajouté des balises sémantiques header, main et footer afin d'accentuer encore la
+          structuration de la page et son accessibilité.
+        </p>
+      </section>
 
-      <h3>Optimisation</h3>
-      <h4>Bilan lighthouse</h4>
-      <img src="lh_contact_desk_opti.jpg" />
-      <img src="lh_contact_mob_opti.jpg" />
-      <h4>Compte-rendu wave</h4>
-      <img src="wave_contact_opti.jpg" />
+      <section class="proposition__light">
+        <h3>Bilan lighthouse</h3>
+        <div class="score score--green">100</div>
+        <div class="score score--green">100</div>
+        <div class="score score--green">100</div>
+        <div class="score score--green">100</div>
+
+        <section class="proposition__light__figures">
+          <figure>
+            <img src="assets/lh_index_desk_opti.jpg" />
+            <figcaption>Performances de l'index en vue desktop</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/lh_index_mob_opti.jpg" />
+            <figcaption>Performances de l'index en vue mobile</figcaption>
+          </figure>
+        </section>
+
+        <section class="proposition__light__figures">
+          <figure>
+            <img src="assets/lh_contact_desk_opti.jpg" />
+            <figcaption>Performances de la page de contact en vue desktop</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/lh_contact_mob_opti.jpg" />
+            <figcaption>Performances de la page de contact en vue mobile</figcaption>
+          </figure>
+        </section>
+      </section>
     </section>
   </main>
   <footer></footer>

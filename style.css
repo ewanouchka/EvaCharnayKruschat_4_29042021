@@ -33,6 +33,7 @@ header {
 main {
   max-width: 1280px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .top-links {
@@ -99,11 +100,6 @@ figcaption {
   max-width: 25rem;
 }
 
-p,
-ul {
-  text-align: justify;
-}
-
 .inventory__wave__errors {
   display: flex;
   justify-content: space-between;
@@ -166,20 +162,46 @@ ul {
   color: rgb(253, 163, 40);
 }
 
-/*
-.inventory section:nth-child(3),
-.proposition section:nth-child(3) {
-  margin-top: 4rem;
+@media (max-width: 768px) {
+  .top-links,
+  .inventory__wave__figures,
+  .inventory__light__figures,
+  .proposition__wave__figures,
+  .proposition__light__figures,
+  .inventory__light__score,
+  .proposition__light__score {
+    flex-direction: column;
+  }
+
+  .inventory img,
+  .proposition img,
+  .inventory__light__score__device,
+  .proposition__light__score__device {
+    width: 100%;
+  }
 }
 
-h4 {
-  margin: 0;
-  width: 100%;
-  font-weight: normal;
-}
+@media (max-width: 1024px) {
+  .inventory__wave__errors {
+    flex-direction: column;
+  }
+  .inventory__wave__errors__index,
+  .inventory__wave__errors__contact {
+    width: 100%;
+    text-align: center;
+  }
 
-.inventory h4:nth-child(5),
-.proposition h4:nth-child(5) {
-  margin-top: 2rem;
+  .inventory__wave__errors__index p,
+  .inventory__wave__errors__contact p,
+  .inventory__wave__errors__index ul,
+  .inventory__wave__errors__contact ul {
+    text-align: left;
+  }
+
+  .inventory__wave__errors img {
+    float: none;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }
-*/

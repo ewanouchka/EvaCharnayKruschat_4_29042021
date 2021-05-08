@@ -646,7 +646,7 @@ blockquote::after {
     position: relative;
   }
   .bloc {
-    padding-left: env(safe-area-inset-left);
+    padding-left: env(safe-area-inset-left, 20px);
     padding-right: env(safe-area-inset-right);
   }
   .bloc-group,

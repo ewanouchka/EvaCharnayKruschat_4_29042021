@@ -20,7 +20,7 @@
     <section class="inventory">
       <h2>Etat des lieux</h2>
       <section class="inventory__wave">
-        <h3>Compte-rendu wave</h3>
+        <h3>Compte-rendu Wave</h3>
         <section class="inventory__wave__figures">
           <figure>
             <img src="assets/wave_index_base.jpg" alt="Etat d'accessibilité de l'index" />
@@ -81,11 +81,35 @@
       </section>
 
       <section class="inventory__light">
-        <h3>Bilan lighthouse</h3>
-        <div class="score score--orange">79</div>
-        <div class="score score--green">90</div>
-        <div class="score score--orange">80</div>
-        <div class="score score--orange">80</div>
+        <h3>Bilan Lighthouse</h3>
+        <section class="inventory__light__score">
+          <div class="inventory__light__score__device">
+            <h4>Ordinateur</h4>
+            <div class="score score--green">92</div>
+            <div class="score score--orange">79</div>
+            <div class="score score--green">90</div>
+            <p>Performance</p>
+            <p>Accessibilité</p>
+            <p>SEO</p>
+          </div>
+          <div class="inventory__light__score__device">
+            <h4>Mobile</h4>
+            <div class="score score--orange">88</div>
+            <div class="score score--orange">80</div>
+            <div class="score score--orange">80</div>
+            <p>Performance</p>
+            <p>Accessibilité</p>
+            <p>SEO</p>
+          </div>
+        </section>
+        <p>
+          Tout comme Wave, Lighthouse valide l'usage de textes alternatifs sur les liens et les images. Il relève
+          également la bonne pratique concernant l'affichage d'un titre sur la page, ainsi que dans les balises meta, de
+          la présence d'une balise lang et d'un charset dans le head de la page et l'usage de la balise viewport pour
+          l'affichage mobile. <br />Certains de ces points positifs sont cependant à nuancer car ils restent mal
+          renseignés bien que présent (titre : "." par exemple).
+        </p>
+
         <section class="inventory__light__figures">
           <figure>
             <img src="assets/lh_index_desk_base.jpg" />
@@ -96,6 +120,17 @@
             <figcaption>Performances de l'index en vue mobile</figcaption>
           </figure>
         </section>
+        <p>
+          Lighthouse relève un temps de chargement trop long pour la page d'index, dû à des fichiers images trop lourds
+          au format .bmp. Préférer un format .jpg compressé afin de réduire la charge et les délais.
+          <br />Afin de gagner en délai de chargement de la page, il est également conseillé de différer la diffusion
+          des feuilles de javascript, et de supprimer le css non utilisé (dans les feuilles fontawesome.css et
+          et-line.css notamment). <br />Tout comme sur Wave, l'attention est portée sur les contrastes insuffisants
+          gênant l'accessibilité visuelle de la page, l'ordre des en-têtes, l'attribut lang incorrect et l'absence de
+          texte alternatif pour les liens des réseaux sociaux. Il est également relevé un texte peu lisible pour les
+          paragraphes, dû à une police inférieure à 12px.<br />Enfin, en terme de SEO, il est indispensable de
+          renseigner une description correcte du site dans la balise meta concernée.
+        </p>
 
         <section class="inventory__light__figures">
           <figure>
@@ -107,13 +142,18 @@
             <figcaption>Performances de la page de contact en vue mobile</figcaption>
           </figure>
         </section>
+        <p>
+          Outre les éléments déjà relevés sur la page d'index, Lighthouse attire notre attention sur l'absence de
+          libellé pour les éléments de formulaire (code incorrect). Le temps de chargement de la page de contact est
+          cependant correct car celle-ci présente peu de fichiers images.
+        </p>
       </section>
     </section>
 
     <section class="proposition">
       <h2>Améliorations proposées</h2>
       <section class="proposition__wave">
-        <h3>Compte-rendu wave</h3>
+        <h3>Compte-rendu Wave</h3>
         <section class="proposition__wave__figures">
           <figure>
             <img src="assets/wave_index_opti.jpg" />
@@ -130,7 +170,7 @@
             ajustement des textes alternatifs afin qu'ils soient descriptifs de l'image ou du lien auquel ils sont
             associés, et uniques,
           </li>
-          <li>suppression du texte caché,</li>
+          <li>suppression du texte caché ou rétablissement de sa visibilité (page de contact),</li>
           <li>rectification de l'ordre des balises h2 et h3,</li>
           <li>rectification des label des champs de formulaire,</li>
           <li>correction de la balise lang="fr".</li>
@@ -147,10 +187,34 @@
 
       <section class="proposition__light">
         <h3>Bilan lighthouse</h3>
-        <div class="score score--green">100</div>
-        <div class="score score--green">100</div>
-        <div class="score score--green">100</div>
-        <div class="score score--green">100</div>
+        <section class="proposition__light__score">
+          <div class="proposition__light__score__device">
+            <h4>Ordinateur</h4>
+            <div class="score score--green">100</div>
+            <div class="score score--green">100</div>
+            <div class="score score--green">100</div>
+            <p>Performance</p>
+            <p>Accessibilité</p>
+            <p>SEO</p>
+          </div>
+          <div class="proposition__light__score__device">
+            <h4>Mobile</h4>
+            <div class="score score--green">98</div>
+            <div class="score score--green">100</div>
+            <div class="score score--green">100</div>
+            <p>Performance</p>
+            <p>Accessibilité</p>
+            <p>SEO</p>
+          </div>
+        </section>
+        <p>
+          Outre la structure de la page raffermie par l'ajout de balises sémantiques comme vu précédemment, nous avons
+          remanié le footer afin de l'harmoniser sur les deux pages du site, et t'en retirer la multitude de liens
+          inappropriés. Afin d'éviter un impact négatif sur le référencement par les robots google, il convient d'éviter
+          les liens en footer, et de préférer des liens utiles à une multitude de liens sans rapport avec l'activité de
+          La chouette agence.<br />La barre de navigation a également été corrigée afin d'être plus parlante, et visible
+          correctement sur les deux pages.
+        </p>
 
         <section class="proposition__light__figures">
           <figure>
@@ -162,7 +226,6 @@
             <figcaption>Performances de l'index en vue mobile</figcaption>
           </figure>
         </section>
-
         <section class="proposition__light__figures">
           <figure>
             <img src="assets/lh_contact_desk_opti.jpg" />
@@ -173,6 +236,15 @@
             <figcaption>Performances de la page de contact en vue mobile</figcaption>
           </figure>
         </section>
+        <p>
+          Les performances du site sont améliorées par la compression des fichiers images et la suppression des textures
+          qui peuvent en outre gêner la lisibilité. Afin d'assurer un affichage plus rapide sur les téléphones, les
+          bannières de fond ont été rognées afin d'être réduites en fonction de leur boîte d'affichage en mobile.<br />L'accessibilité
+          est renforcée par l'usage de balises aria pour spécifier les liens graphiques ainsi que par le rétablissement
+          de l'ordre correct des en-têtes. Une attention particulière est portée à la lisibilité tant en terme de
+          contraste que de taille de police. <br />Une bonne gestion du SEO est assurée par des balises titre et
+          description plus pertinentes.
+        </p>
       </section>
     </section>
   </main>

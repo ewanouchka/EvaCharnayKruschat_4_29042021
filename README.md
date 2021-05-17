@@ -6,7 +6,7 @@ Indiquer les parties du site qui ne sont pas optimisées pour le SEO et/ou qui n
 
 ## Amélioration du SEO du site.
 
-Optimiser le site en appliquant les recommandations issues de l'analyse (10), vérifier la validation W2C HTML et CSS.
+Optimiser le site en appliquant les recommandations issues de l'analyse (10), vérifier la validation W3C HTML et CSS.
 
 ## Comparaison des résultats.
 
